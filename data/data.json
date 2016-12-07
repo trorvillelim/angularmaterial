@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Mac",
+    "price": "1896",
+    "desc": "Nunquam perdere triticum.Sunt clabularees locus rusticus, emeritis armariumes.Orexiss mori in vasa!",
+    "imgURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/IMac_vector.svg/2000px-IMac_vector.svg.png",
+    "contact": {
+      "name": "John Doe",
+      "email": "John@gmail.com",
+      "phone": "557-0778-03"
+    },
+    "specs": {
+      "size": "400 X 600",
+      "mah": "12000",
+      "camera": "Yes",
+      "HD": "Yes"
+    }
+  },
+  {
+    "title": "Laptop X",
+    "price": "1000",
+    "desc": "Nunquam perdere triticum.Sunt clabularees locus rusticus, emeritis armariumes.Orexiss mori in vasa!",
+    "imgURL": "https://static1.squarespace.com/static/53301d99e4b079860b0820f0/55774441e4b074cffcb5ee2a/5577f19ae4b0549e5e22b297/1433924004639/GunzBook-Pro-Retina-Laptop-Mockup-Premium-Kit2.png?format=1000w",
+    "contact": {
+      "name": "Robert Dizon",
+      "email": "Dizon@gmail.com",
+      "phone": "7527-336-03"
+    },
+    "specs": {
+      "size": "400 X 600",
+      "mah": "12000",
+      "camera": "Yes",
+      "HD": "Yes"
+    }
+  },
+  {
+    "title": "Pie Phone",
+    "price": "488",
+    "desc": "Nunquam perdere triticum.Sunt clabularees locus rusticus, emeritis armariumes.Orexiss mori in vasa!",
+    "imgURL": "https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/iPhone6_Render_Mockup_PSD_Template.png",
+    "contact": {
+      "name": "Robert Dizon",
+      "email": "Dizon@gmail.com",
+      "phone": "7527-336-03"
+    },
+    "specs": {
+      "size": "900 X 900",
+      "mah": "12000",
+      "camera": "Yes",
+      "HD": "Yes"
+    }
+  },
+  {
+    "title": "PGX",
+    "price": "389",
+    "desc": "Nunquam perdere triticum.Sunt clabularees locus rusticus, emeritis armariumes.Orexiss mori in vasa!",
+    "imgURL": "http://upload.chinaz.com/2015/0507/1430967173419.jpg",
+    "contact": {
+      "name": "jenny Choi",
+      "email": "Choi@gmail.com",
+      "phone": "889-23-667"
+    },
+    "specs": {
+      "size": "1400 X 900 ",
+      "mah": "12000",
+      "camera": "Yes",
+      "HD": "Yes"
+    }
+  }
+]

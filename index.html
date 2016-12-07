@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+
+        <!--material design-->
+        <script src="bower_components/angular-material/angular-material.js"></script>
+        <link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.css"> </link>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <script src="app/app.module.js"></script>
+        <script src="app.config.js" > </script>
+        <script src="app/app.Controller.js" > </script>
+        <script src="navigation/navigation.module.js" > </script>
+        <script src="navigation/navigation.module.js" > </script>
+        <script src="navigation/navigation.component.js" > </script>
+
+        <link rel="stylesheet" type="text/css" href="CSS/app.css">
+    </head>
+
+    <title></title>
+
+<body ng-app="material" ng-controller="materialController">
+
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <p> Header </p>
+            <md-button ng-click="openSideBar()">
+                <md-icon>add</md-icon>
+                new Classified
+            </md-button>
+        </div>
+    </md-toolbar>
+
+    <nav-form></nav-form>
+
+    <md-content class="md-padding" layout="row">
+        <md-card flex="30" ng-repeat="classfied in classfieds">
+            <img ng-src="{{ classfied.imgURL }}"  class="img-padding img-holder">
+                <div class="classified-info">
+                    <h2 class="md-title card-middle"> {{ classfied.title}}</h2>
+                    <h3 class="card-middle"> {{ classfied.price | currency : "$"}}</h3>
+                    <p  class="card-middle"> {{ classfied.desc }}  </p>
+                </div>
+
+                <div class="classified-specs" ng-show="specs_show">
+                    <p> Camera: {{classfied.specs.camera}}  </p>
+                    <p> HD:     {{classfied.specs.HD}}      </p>
+                    <p> size:   {{classfied.specs.size}}    </p>
+                    <p> Mah:    {{classfied.specs.mah}}     </p>
+                </div>
+
+                <div class="classified-contact" ng-show="contacts_show">
+                    <md-icon>contacts</md-icon> {{ classfied.contact.name }}  <br>
+                    <md-icon>phone</md-icon>    {{ classfied.contact.phone }} <br>
+                    <md-icon>email</md-icon>    {{ classfied.contact.email }}
+                </div>
+
+            <div class="classified-admin" ng-show="admin_show">
+                <md-button ng-click="" class="md-primary"> Edit </md-button>
+                <md-button ng-click="" class="md-warn"> Delete </md-button>
+            </div>
+
+            <md-button ng-click="specs_show = !specs_show"> Detail </md-button>
+            <md-button ng-click="contacts_show = !contacts_show"> Contact </md-button>
+            <md-button ng-click="admin_show = !admin_show"> Admin </md-button>
+
+        </md-card>
+    </md-content>
+
+</body>
+</html>

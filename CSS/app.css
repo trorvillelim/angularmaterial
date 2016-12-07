@@ -1,0 +1,39 @@
+.box{
+
+ margin-top: 300px !important;
+}
+
+.material-icons{
+    position: relative;
+}
+
+.card-middle{
+    text-align: center;
+}
+
+.img-padding{
+    padding: 7px;
+}
+
+.img-holder{
+    height: 30%;
+    width: 100%;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.img-holder:hover{
+    transform: scale(1.1);
+}
+.classified-contact *{
+    position: relative;
+}
+
+.md-button{
+    border: 1px solid rgb(76,175,80); !important;
+}
+
+.classified-admin{
+    margin: 0 auto;
+}
+
